@@ -1,0 +1,14 @@
+@media only screen {
+    @media (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 2dppx), (min-resolution: 192dpi)
+    {
+        .options__icon.options__icon-huge {
+            background-image: url(resources/../../img/iconshuge@2x.png);
+            background-image: var(--sprite-button-huge-200, url(resources/../../img/iconshuge@2x.png));
+
+            .winxp & {
+                background-image: url(resources/../../img/iconshuge@2x.png);
+            }
+        }
+    }
+}

@@ -1,0 +1,553 @@
+.btn {
+    &.x-huge {
+        &.active, &:active {
+            &:not(:disabled):not(.disabled) {
+                .toolbar__icon {
+                    background-position-x: -28px;
+                    background-position-x: var(--button-xhuge-active-icon-offset-x,0);
+                }
+            }
+        }
+    }
+
+    &.active, &:active {
+        &:not(:disabled):not(.disabled) {
+            .toolbar__icon.toolbar__icon-big {
+                background-position-x: -28px;
+                background-position-x: var(--button-xhuge-active-icon-offset-x,0);
+            }
+        }
+    }
+}
+.x-huge .toolbar__icon, .toolbar__icon.toolbar__icon-big {
+    background-image: url(resources/../../img/iconsbig.png);
+    background-size: 56px auto;
+    background-image: var(--sprite-button-big-100, url(resources/../../img/iconsbig.png));
+    background-size: var(--sprite-button-big-width, 56px) auto;
+
+    .winxp & {
+        background-image: url(resources/../../img/iconsbig.png);
+    }
+}
+.x-huge .btn-audio:not(.menu__icon),
+    .toolbar__icon-big.btn-audio
+{
+    background-position: 0 -1008px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1008px;
+}
+.x-huge .btn-background-plugins:not(.menu__icon),
+    .toolbar__icon-big.btn-background-plugins
+{
+    background-position: 0 -1036px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1036px;
+}
+.x-huge .btn-big-add-comment:not(.menu__icon),
+    .toolbar__icon-big.btn-big-add-comment
+{
+    background-position: 0 -1064px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1064px;
+}
+.x-huge .btn-big-colorschemas:not(.menu__icon),
+    .toolbar__icon-big.btn-big-colorschemas
+{
+    background-position: 0 -1092px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1092px;
+}
+.x-huge .btn-big-hand-tool:not(.menu__icon),
+    .toolbar__icon-big.btn-big-hand-tool
+{
+    background-position: 0 -1120px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1120px;
+}
+.x-huge .btn-big-inserthyperlink:not(.menu__icon),
+    .toolbar__icon-big.btn-big-inserthyperlink
+{
+    background-position: 0 -1148px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1148px;
+}
+.x-huge .btn-big-menu-comments:not(.menu__icon),
+    .toolbar__icon-big.btn-big-menu-comments
+{
+    background-position: 0 -1176px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1176px;
+}
+.x-huge .btn-big-menu-navigation:not(.menu__icon),
+    .toolbar__icon-big.btn-big-menu-navigation
+{
+    background-position: 0 -1204px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1204px;
+}
+.x-huge .btn-big-more:not(.menu__icon),
+    .toolbar__icon-big.btn-big-more
+{
+    background-position: 0 -1232px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1232px;
+}
+.x-huge .btn-big-sheet-view:not(.menu__icon),
+    .toolbar__icon-big.btn-big-sheet-view
+{
+    background-position: 0 -1260px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1260px;
+}
+.x-huge .btn-big-text-vertical:not(.menu__icon),
+    .toolbar__icon-big.btn-big-text-vertical
+{
+    background-position: 0 -1288px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1288px;
+}
+.x-huge .btn-big-text:not(.menu__icon),
+    .toolbar__icon-big.btn-big-text
+{
+    background-position: 0 -1316px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1316px;
+}
+.x-huge .btn-compare:not(.menu__icon),
+    .toolbar__icon-big.btn-compare
+{
+    background-position: 0 -1344px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1344px;
+}
+.x-huge .btn-datetime:not(.menu__icon),
+    .toolbar__icon-big.btn-datetime
+{
+    background-position: 0 -1372px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1372px;
+}
+.x-huge .btn-day:not(.menu__icon),
+    .toolbar__icon-big.btn-day
+{
+    background-position: 0 -1400px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1400px;
+}
+.x-huge .btn-editheader:not(.menu__icon),
+    .toolbar__icon-big.btn-editheader
+{
+    background-position: 0 -1428px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1428px;
+}
+.x-huge .btn-eraser:not(.menu__icon),
+    .toolbar__icon-big.btn-eraser
+{
+    background-position: 0 -1456px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1456px;
+}
+.x-huge .btn-highlighter-tool:not(.menu__icon),
+    .toolbar__icon-big.btn-highlighter-tool
+{
+    background-position: 0 -1484px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1484px;
+}
+.x-huge .btn-ic-chat:not(.menu__icon),
+    .toolbar__icon-big.btn-ic-chat
+{
+    background-position: 0 -1512px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1512px;
+}
+.x-huge .btn-ic-coedit:not(.menu__icon),
+    .toolbar__icon-big.btn-ic-coedit
+{
+    background-position: 0 -1540px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1540px;
+}
+.x-huge .btn-ic-history:not(.menu__icon),
+    .toolbar__icon-big.btn-ic-history
+{
+    background-position: 0 -1568px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1568px;
+}
+.x-huge .btn-ic-protect:not(.menu__icon),
+    .toolbar__icon-big.btn-ic-protect
+{
+    background-position: 0 -1596px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1596px;
+}
+.x-huge .btn-ic-sharing:not(.menu__icon),
+    .toolbar__icon-big.btn-ic-sharing
+{
+    background-position: 0 -1624px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1624px;
+}
+.x-huge .btn-ic-signature:not(.menu__icon),
+    .toolbar__icon-big.btn-ic-signature
+{
+    background-position: 0 -1652px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1652px;
+}
+.x-huge .btn-img-align:not(.menu__icon),
+    .toolbar__icon-big.btn-img-align
+{
+    background-position: 0 -1680px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1680px;
+}
+.x-huge .btn-img-bkwd:not(.menu__icon),
+    .toolbar__icon-big.btn-img-bkwd
+{
+    background-position: 0 -1708px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1708px;
+}
+.x-huge .btn-img-frwd:not(.menu__icon),
+    .toolbar__icon-big.btn-img-frwd
+{
+    background-position: 0 -1736px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1736px;
+}
+.x-huge .btn-img-group:not(.menu__icon),
+    .toolbar__icon-big.btn-img-group
+{
+    background-position: 0 -1764px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1764px;
+}
+.x-huge .btn-insertchart:not(.menu__icon),
+    .toolbar__icon-big.btn-insertchart
+{
+    background-position: 0 -1792px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1792px;
+}
+.x-huge .btn-insertequation:not(.menu__icon),
+    .toolbar__icon-big.btn-insertequation
+{
+    background-position: 0 -1820px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1820px;
+}
+.x-huge .btn-insertimage:not(.menu__icon),
+    .toolbar__icon-big.btn-insertimage
+{
+    background-position: 0 -1848px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1848px;
+}
+.x-huge .btn-insertshape:not(.menu__icon),
+    .toolbar__icon-big.btn-insertshape
+{
+    background-position: 0 -1876px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1876px;
+}
+.x-huge .btn-inserttable:not(.menu__icon),
+    .toolbar__icon-big.btn-inserttable
+{
+    background-position: 0 -1904px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1904px;
+}
+.x-huge .btn-macros:not(.menu__icon),
+    .toolbar__icon-big.btn-macros
+{
+    background-position: 0 -1932px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1932px;
+}
+.x-huge .btn-merge-shapes:not(.menu__icon),
+    .toolbar__icon-big.btn-merge-shapes
+{
+    background-position: 0 -1960px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1960px;
+}
+.x-huge .btn-night:not(.menu__icon),
+    .toolbar__icon-big.btn-night
+{
+    background-position: 0 -1988px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1988px;
+}
+.x-huge .btn-pagebreak:not(.menu__icon),
+    .toolbar__icon-big.btn-pagebreak
+{
+    background-position: 0 -2016px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -2016px;
+}
+.x-huge .btn-pagemargins:not(.menu__icon),
+    .toolbar__icon-big.btn-pagemargins
+{
+    background-position: 0 -2044px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -2044px;
+}
+.x-huge .btn-pageorient:not(.menu__icon),
+    .toolbar__icon-big.btn-pageorient
+{
+    background-position: 0 -2072px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -2072px;
+}
+.x-huge .btn-pagesize:not(.menu__icon),
+    .toolbar__icon-big.btn-pagesize
+{
+    background-position: 0 -2100px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -2100px;
+}
+.x-huge .btn-pen-tool:not(.menu__icon),
+    .toolbar__icon-big.btn-pen-tool
+{
+    background-position: 0 -2128px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -2128px;
+}
+.x-huge .btn-plugin-default:not(.menu__icon),
+    .toolbar__icon-big.btn-plugin-default
+{
+    background-position: 0 -2156px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -2156px;
+}
+.x-huge .btn-properties:not(.menu__icon),
+    .toolbar__icon-big.btn-properties
+{
+    background-position: 0 -2184px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -2184px;
+}
+.x-huge .btn-rem-comment:not(.menu__icon),
+    .toolbar__icon-big.btn-rem-comment
+{
+    background-position: 0 -2212px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -2212px;
+}
+.x-huge .btn-resolve-all:not(.menu__icon),
+    .toolbar__icon-big.btn-resolve-all
+{
+    background-position: 0 -2240px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -2240px;
+}
+.x-huge .btn-select:not(.menu__icon),
+    .toolbar__icon-big.btn-select
+{
+    background-position: 0 -2268px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -2268px;
+}
+.x-huge .btn-smart-art:not(.menu__icon),
+    .toolbar__icon-big.btn-smart-art
+{
+    background-position: 0 -2296px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -2296px;
+}
+.x-huge .btn-symbol:not(.menu__icon),
+    .toolbar__icon-big.btn-symbol
+{
+    background-position: 0 -2324px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -2324px;
+}
+.x-huge .btn-textart:not(.menu__icon),
+    .toolbar__icon-big.btn-textart
+{
+    background-position: 0 -2352px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -2352px;
+}
+.x-huge .btn-update:not(.menu__icon),
+    .toolbar__icon-big.btn-update
+{
+    background-position: 0 -2380px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -2380px;
+}
+.x-huge .btn-video:not(.menu__icon),
+    .toolbar__icon-big.btn-video
+{
+    background-position: 0 -2408px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -2408px;
+}
+.x-huge .btn-big-annotation-arrow:not(.menu__icon),
+    .toolbar__icon-big.btn-big-annotation-arrow
+{
+    background-position: 0 0px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) 0px;
+}
+.x-huge .btn-big-annotation-circle:not(.menu__icon),
+    .toolbar__icon-big.btn-big-annotation-circle
+{
+    background-position: 0 -28px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -28px;
+}
+.x-huge .btn-big-annotation-connected-lines:not(.menu__icon),
+    .toolbar__icon-big.btn-big-annotation-connected-lines
+{
+    background-position: 0 -56px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -56px;
+}
+.x-huge .btn-big-annotation-line:not(.menu__icon),
+    .toolbar__icon-big.btn-big-annotation-line
+{
+    background-position: 0 -84px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -84px;
+}
+.x-huge .btn-big-annotation-rectangle:not(.menu__icon),
+    .toolbar__icon-big.btn-big-annotation-rectangle
+{
+    background-position: 0 -112px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -112px;
+}
+.x-huge .btn-big-magic-wand:not(.menu__icon),
+    .toolbar__icon-big.btn-big-magic-wand
+{
+    background-position: 0 -140px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -140px;
+}
+.x-huge .btn-big-text-callout:not(.menu__icon),
+    .toolbar__icon-big.btn-big-text-callout
+{
+    background-position: 0 -168px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -168px;
+}
+.x-huge .btn-big-text-comment:not(.menu__icon),
+    .toolbar__icon-big.btn-big-text-comment
+{
+    background-position: 0 -196px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -196px;
+}
+.x-huge .btn-blankpage:not(.menu__icon),
+    .toolbar__icon-big.btn-blankpage
+{
+    background-position: 0 -224px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -224px;
+}
+.x-huge .btn-checkbox:not(.menu__icon),
+    .toolbar__icon-big.btn-checkbox
+{
+    background-position: 0 -252px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -252px;
+}
+.x-huge .btn-clear-metadata:not(.menu__icon),
+    .toolbar__icon-big.btn-clear-metadata
+{
+    background-position: 0 -280px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -280px;
+}
+.x-huge .btn-clear-style:not(.menu__icon),
+    .toolbar__icon-big.btn-clear-style
+{
+    background-position: 0 -308px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -308px;
+}
+.x-huge .btn-combo-box:not(.menu__icon),
+    .toolbar__icon-big.btn-combo-box
+{
+    background-position: 0 -336px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -336px;
+}
+.x-huge .btn-credit-card:not(.menu__icon),
+    .toolbar__icon-big.btn-credit-card
+{
+    background-position: 0 -364px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -364px;
+}
+.x-huge .btn-dark-mode:not(.menu__icon),
+    .toolbar__icon-big.btn-dark-mode
+{
+    background-position: 0 -392px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -392px;
+}
+.x-huge .btn-dropdown:not(.menu__icon),
+    .toolbar__icon-big.btn-dropdown
+{
+    background-position: 0 -420px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -420px;
+}
+.x-huge .btn-edit-text:not(.menu__icon),
+    .toolbar__icon-big.btn-edit-text
+{
+    background-position: 0 -448px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -448px;
+}
+.x-huge .btn-email:not(.menu__icon),
+    .toolbar__icon-big.btn-email
+{
+    background-position: 0 -476px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -476px;
+}
+.x-huge .btn-find-to-redact:not(.menu__icon),
+    .toolbar__icon-big.btn-find-to-redact
+{
+    background-position: 0 -504px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -504px;
+}
+.x-huge .btn-listbox:not(.menu__icon),
+    .toolbar__icon-big.btn-listbox
+{
+    background-position: 0 -532px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -532px;
+}
+.x-huge .btn-next-field:not(.menu__icon),
+    .toolbar__icon-big.btn-next-field
+{
+    background-position: 0 -560px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -560px;
+}
+.x-huge .btn-pagenum:not(.menu__icon),
+    .toolbar__icon-big.btn-pagenum
+{
+    background-position: 0 -588px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -588px;
+}
+.x-huge .btn-phone:not(.menu__icon),
+    .toolbar__icon-big.btn-phone
+{
+    background-position: 0 -616px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -616px;
+}
+.x-huge .btn-previous-field:not(.menu__icon),
+    .toolbar__icon-big.btn-previous-field
+{
+    background-position: 0 -644px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -644px;
+}
+.x-huge .btn-radio-button:not(.menu__icon),
+    .toolbar__icon-big.btn-radio-button
+{
+    background-position: 0 -672px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -672px;
+}
+.x-huge .btn-redact-apply:not(.menu__icon),
+    .toolbar__icon-big.btn-redact-apply
+{
+    background-position: 0 -700px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -700px;
+}
+.x-huge .btn-redact-pages:not(.menu__icon),
+    .toolbar__icon-big.btn-redact-pages
+{
+    background-position: 0 -728px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -728px;
+}
+.x-huge .btn-redact-text:not(.menu__icon),
+    .toolbar__icon-big.btn-redact-text
+{
+    background-position: 0 -756px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -756px;
+}
+.x-huge .btn-rem-page:not(.menu__icon),
+    .toolbar__icon-big.btn-rem-page
+{
+    background-position: 0 -784px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -784px;
+}
+.x-huge .btn-rotate-page:not(.menu__icon),
+    .toolbar__icon-big.btn-rotate-page
+{
+    background-position: 0 -812px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -812px;
+}
+.x-huge .btn-save-form:not(.menu__icon),
+    .toolbar__icon-big.btn-save-form
+{
+    background-position: 0 -840px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -840px;
+}
+.x-huge .btn-signature-field:not(.menu__icon),
+    .toolbar__icon-big.btn-signature-field
+{
+    background-position: 0 -868px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -868px;
+}
+.x-huge .btn-stamp:not(.menu__icon),
+    .toolbar__icon-big.btn-stamp
+{
+    background-position: 0 -896px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -896px;
+}
+.x-huge .btn-submit-form:not(.menu__icon),
+    .toolbar__icon-big.btn-submit-form
+{
+    background-position: 0 -924px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -924px;
+}
+.x-huge .btn-text-field:not(.menu__icon),
+    .toolbar__icon-big.btn-text-field
+{
+    background-position: 0 -952px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -952px;
+}
+.x-huge .btn-zip-code:not(.menu__icon),
+    .toolbar__icon-big.btn-zip-code
+{
+    background-position: 0 -980px;
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -980px;
+}

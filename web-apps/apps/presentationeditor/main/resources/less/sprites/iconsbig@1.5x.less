@@ -1,0 +1,18 @@
+@media only screen {
+    @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 1.7),
+            (min-resolution: 1.5dppx) and (max-resolution: 1.7dppx),
+                (min-resolution: 144dpi) and (max-resolution: 167dpi)
+    {
+        .x-huge .toolbar__icon, .toolbar__icon.toolbar__icon-big {
+            background-image: url(resources/../../img/iconsbig@1.5x.png);
+            background-image: var(--sprite-button-big-150, url(resources/../../img/iconsbig@1.5x.png));
+
+            .winxp & {
+                background-image: url(resources/../../img/iconsbig@1.5x.png);
+            }
+        }
+    }
+}
+
+.toolbar__icon.toolbar__icon-big {
+}

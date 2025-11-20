@@ -1,0 +1,1269 @@
+.btn {
+    &.active, &:active {
+        &:not(:disabled):not(.disabled) {
+            .toolbar__icon {
+                background-position-x: -20px;
+                background-position-x: var(--button-small-active-icon-offset-x, 0);
+            }
+        }
+    }
+}
+.toolbar__icon, .menu__icon {
+    background-image: url(resources/../../img/iconssmall.png);
+    background-size: 40px auto;
+    background-image: var(--sprite-button-small-100, url(resources/../../img/iconssmall.png));
+    background-size: var(--sprite-button-small-width, 40px) auto;
+}
+.winxp {
+    .toolbar__icon, .menu__icon {
+        background-image: url(resources/../../img/iconssmall.png);
+    }
+}
+.btn-add-breakpoint {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -320px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -320px;
+}
+.btn-add-comment {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -340px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -340px;
+}
+.btn-addcell {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -360px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -360px;
+}
+.btn-advanced-ratio {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -380px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -380px;
+}
+.btn-align-bottom {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -400px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -400px;
+}
+.btn-align-center {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -420px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -420px;
+}
+.btn-align-just {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -440px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -440px;
+}
+.btn-align-left {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -460px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -460px;
+}
+.btn-align-middle {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -480px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -480px;
+}
+.btn-align-right {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -500px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -500px;
+}
+.btn-align-top {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -520px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -520px;
+}
+.btn-arrange-back {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -540px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -540px;
+}
+.btn-arrange-backward {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -560px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -560px;
+}
+.btn-arrange-forward {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -580px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -580px;
+}
+.btn-arrange-front {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -600px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -600px;
+}
+.btn-arrow-down {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -620px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -620px;
+}
+.btn-arrow-up {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -640px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -640px;
+}
+.btn-autocorrect {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -660px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -660px;
+}
+.btn-bold {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -680px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -680px;
+}
+.btn-border-all {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -700px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -700px;
+}
+.btn-border-bottom {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -720px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -720px;
+}
+.btn-border-diagdown {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -740px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -740px;
+}
+.btn-border-diagup {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -760px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -760px;
+}
+.btn-border-inside {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -780px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -780px;
+}
+.btn-border-insidehor {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -800px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -800px;
+}
+.btn-border-insidevert {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -820px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -820px;
+}
+.btn-border-left {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -840px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -840px;
+}
+.btn-border-no {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -860px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -860px;
+}
+.btn-border-out {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -880px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -880px;
+}
+.btn-border-right {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -900px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -900px;
+}
+.btn-border-style {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -920px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -920px;
+}
+.btn-border-top {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -940px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -940px;
+}
+.btn-browse {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -960px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -960px;
+}
+.btn-cc-remove {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -980px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -980px;
+}
+.btn-change-case {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1000px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1000px;
+}
+.btn-chart-elements {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1020px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1020px;
+}
+.btn-clearstyle {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1040px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1040px;
+}
+.btn-close {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1060px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1060px;
+}
+.btn-collapse-all {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1080px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1080px;
+}
+.btn-colorschemas {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1100px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1100px;
+}
+.btn-columns-one {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1120px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1120px;
+}
+.btn-columns-three {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1140px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1140px;
+}
+.btn-columns-two {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1160px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1160px;
+}
+.btn-combine-shapes {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1180px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1180px;
+}
+.btn-context {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1200px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1200px;
+}
+.btn-copy {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1220px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1220px;
+}
+.btn-copystyle {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1240px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1240px;
+}
+.btn-create-new {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1260px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1260px;
+}
+.btn-cut {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1280px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1280px;
+}
+.btn-date {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1300px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1300px;
+}
+.btn-debug {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1320px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1320px;
+}
+.btn-decfont {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1340px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1340px;
+}
+.btn-decoffset {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1360px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1360px;
+}
+.btn-delcell {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1380px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1380px;
+}
+.btn-demote {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1400px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1400px;
+}
+.btn-developer {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1420px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1420px;
+}
+.btn-download {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1440px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1440px;
+}
+.btn-edit-points {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1460px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1460px;
+}
+.btn-edit {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1480px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1480px;
+}
+.btn-embed {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1500px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1500px;
+}
+.btn-equation {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1520px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1520px;
+}
+.btn-expand-all {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1540px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1540px;
+}
+.btn-eyedropper {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1560px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1560px;
+}
+.btn-favorite {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1580px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1580px;
+}
+.btn-firstitem {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1600px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1600px;
+}
+.btn-flip-hor {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1620px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1620px;
+}
+.btn-flip-vert {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1640px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1640px;
+}
+.btn-fontcolor {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1660px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1660px;
+}
+.btn-fragment-shapes {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1680px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1680px;
+}
+.btn-general-ai {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1700px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1700px;
+}
+.btn-goback {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1720px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1720px;
+}
+.btn-help {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1740px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1740px;
+}
+.btn-hide-password {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1760px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1760px;
+}
+.btn-highlight {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1780px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1780px;
+}
+.btn-home {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1800px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1800px;
+}
+.btn-ic-doclang {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1820px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1820px;
+}
+.btn-ic-docspell {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1840px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1840px;
+}
+.btn-ic-options {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1860px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1860px;
+}
+.btn-ic-review {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1880px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1880px;
+}
+.btn-ic-zoomtopage {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1900px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1900px;
+}
+.btn-ic-zoomtowidth {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1920px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1920px;
+}
+.btn-in-favorite {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1940px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1940px;
+}
+.btn-incfont {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1960px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1960px;
+}
+.btn-incoffset {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -1980px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -1980px;
+}
+.btn-inserthyperlink {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2000px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2000px;
+}
+.btn-intersect-shapes {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2020px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2020px;
+}
+.btn-italic {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2040px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2040px;
+}
+.btn-lastitem {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2060px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2060px;
+}
+.btn-linear-equation {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2080px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2080px;
+}
+.btn-linespace {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2100px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2100px;
+}
+.btn-lock {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2120px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2120px;
+}
+.btn-ltr {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2140px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2140px;
+}
+.btn-macros-pause {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2160px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2160px;
+}
+.btn-macros-record {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2180px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2180px;
+}
+.btn-macros-stop {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2200px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2200px;
+}
+.btn-menu-about {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2220px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2220px;
+}
+.btn-menu-chart {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2240px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2240px;
+}
+.btn-menu-chat {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2260px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2260px;
+}
+.btn-menu-comments {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2280px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2280px;
+}
+.btn-menu-image {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2300px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2300px;
+}
+.btn-menu-navigation {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2320px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2320px;
+}
+.btn-menu-search {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2340px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2340px;
+}
+.btn-menu-shape {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2360px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2360px;
+}
+.btn-menu-signature {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2380px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2380px;
+}
+.btn-menu-support {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2400px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2400px;
+}
+.btn-menu-table {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2420px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2420px;
+}
+.btn-menu-textart {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2440px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2440px;
+}
+.btn-merge-cells {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2460px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2460px;
+}
+.btn-more-vertical {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2480px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2480px;
+}
+.btn-more {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2500px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2500px;
+}
+.btn-nextitem {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2520px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2520px;
+}
+.btn-numbering-rtl {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2540px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2540px;
+}
+.btn-numbering {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2560px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2560px;
+}
+.btn-open {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2580px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2580px;
+}
+.btn-page-landscape {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2600px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2600px;
+}
+.btn-page-portrait {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2620px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2620px;
+}
+.btn-panel-left-collapse {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2640px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2640px;
+}
+.btn-paracolor {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2660px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2660px;
+}
+.btn-paragraph {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2680px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2680px;
+}
+.btn-paste {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2700px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2700px;
+}
+.btn-pin {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2720px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2720px;
+}
+.btn-plugin-panel-default {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2740px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2740px;
+}
+.btn-previtem {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2760px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2760px;
+}
+.btn-print-preview {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2780px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2780px;
+}
+.btn-print {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2800px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2800px;
+}
+.btn-professional-equation {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2820px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2820px;
+}
+.btn-promote {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2840px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2840px;
+}
+.btn-quick-print {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2860px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2860px;
+}
+.btn-redo {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2880px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2880px;
+}
+.btn-remove-breakpoint {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2900px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2900px;
+}
+.btn-rename {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2920px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2920px;
+}
+.btn-replace {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2940px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2940px;
+}
+.btn-reset {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2960px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2960px;
+}
+.btn-rotate-270 {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -2980px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -2980px;
+}
+.btn-rotate-90 {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3000px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3000px;
+}
+.btn-rotate-down {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3020px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3020px;
+}
+.btn-rotate-up {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3040px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3040px;
+}
+.btn-rotate-y-clockwise {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3060px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3060px;
+}
+.btn-rotate-y-counterclockwise {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3080px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3080px;
+}
+.btn-rows-and-columns {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3100px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3100px;
+}
+.btn-rtl {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3120px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3120px;
+}
+.btn-run {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3140px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3140px;
+}
+.btn-save-coauth {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3160px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3160px;
+}
+.btn-save-copy {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3180px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3180px;
+}
+.btn-save {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3200px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3200px;
+}
+.btn-select-all {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3220px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3220px;
+}
+.btn-select-range {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3240px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3240px;
+}
+.btn-setmarkers-rtl {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3260px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3260px;
+}
+.btn-setmarkers {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3280px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3280px;
+}
+.btn-settings {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3300px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3300px;
+}
+.btn-shadow {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3320px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3320px;
+}
+.btn-shape-align-bottom {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3340px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3340px;
+}
+.btn-shape-align-center {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3360px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3360px;
+}
+.btn-shape-align-left {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3380px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3380px;
+}
+.btn-shape-align-middle {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3400px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3400px;
+}
+.btn-shape-align-right {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3420px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3420px;
+}
+.btn-shape-align-top {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3440px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3440px;
+}
+.btn-shape-distribute-hor {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3460px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3460px;
+}
+.btn-shape-distribute-vert {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3480px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3480px;
+}
+.btn-shape-group {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3500px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3500px;
+}
+.btn-shape-ungroup {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3520px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3520px;
+}
+.btn-share {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3540px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3540px;
+}
+.btn-sheet-view {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3560px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3560px;
+}
+.btn-smart-cycle {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3580px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3580px;
+}
+.btn-smart-hierarchy {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3600px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3600px;
+}
+.btn-smart-list {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3620px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3620px;
+}
+.btn-smart-matrix {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3640px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3640px;
+}
+.btn-smart-process {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3660px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3660px;
+}
+.btn-smart-pyramid {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3680px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3680px;
+}
+.btn-smart-relationship {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3700px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3700px;
+}
+.btn-strikeout {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3720px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3720px;
+}
+.btn-styles {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3740px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3740px;
+}
+.btn-subscript {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3760px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3760px;
+}
+.btn-substract-shapes {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3780px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3780px;
+}
+.btn-suggest-feature {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3800px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3800px;
+}
+.btn-superscript {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3820px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3820px;
+}
+.btn-switch-mobile {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3840px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3840px;
+}
+.btn-text-orient-hor {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3860px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3860px;
+}
+.btn-text-orient-rdown {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3880px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3880px;
+}
+.btn-text-orient-rup {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3900px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3900px;
+}
+.btn-text-vertical {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3920px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3920px;
+}
+.btn-text {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3940px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3940px;
+}
+.btn-tree-caret {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3960px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3960px;
+}
+.btn-underline {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -3980px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -3980px;
+}
+.btn-undo {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -4000px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -4000px;
+}
+.btn-union-shapes {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -4020px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -4020px;
+}
+.btn-unpin {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -4040px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -4040px;
+}
+.btn-update {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -4060px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -4060px;
+}
+.btn-users-share {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -4080px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -4080px;
+}
+.btn-version-history {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -4100px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -4100px;
+}
+.btn-zoomdown {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -4120px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -4120px;
+}
+.btn-zoomup {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -4140px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -4140px;
+}
+.btn-add-text {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset 0px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) 0px;
+}
+.btn-annotation-arrow {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -20px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -20px;
+}
+.btn-annotation-circle {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -40px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -40px;
+}
+.btn-annotation-connected-lines {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -60px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -60px;
+}
+.btn-annotation-line {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -80px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -80px;
+}
+.btn-annotation-rectangle {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -100px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -100px;
+}
+.btn-field {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -120px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -120px;
+}
+.btn-find-redacted {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -140px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -140px;
+}
+.btn-hand-tool {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -160px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -160px;
+}
+.btn-magic-wand {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -180px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -180px;
+}
+.btn-menu-thumbs {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -200px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -200px;
+}
+.btn-select-tool {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -220px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -220px;
+}
+.btn-text-callout {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -240px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -240px;
+}
+.btn-text-comment {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -260px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -260px;
+}
+.btn-thumbnail-big {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -280px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -280px;
+}
+.btn-thumbnail-small {
+    @btn-icon-offset: 0;
+    background-position: @btn-icon-offset -300px;
+
+    background-position: var(--button-small-normal-icon-offset-x, 0) -300px;
+}

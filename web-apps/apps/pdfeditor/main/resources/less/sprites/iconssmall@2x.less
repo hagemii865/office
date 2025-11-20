@@ -1,0 +1,16 @@
+@media only screen {
+    @media (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 2dppx), (min-resolution: 192dpi)
+    {
+        .toolbar__icon, .menu__icon {
+            background-image: url(resources/../../img/iconssmall@2x.png);
+            background-image: var(--sprite-button-small-200, url(resources/../../img/iconssmall@2x.png));
+        }
+
+        .winxp {
+            .toolbar__icon, .menu__icon {
+                background-image: url(resources/../../img/iconssmall@2x.png);
+            }
+        }
+    }
+}

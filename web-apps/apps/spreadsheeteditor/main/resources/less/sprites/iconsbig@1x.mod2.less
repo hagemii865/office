@@ -1,0 +1,504 @@
+.btn {
+    &.x-huge {
+        &.active, &:active {
+            &:not(:disabled):not(.disabled) {
+                .toolbar__icon {
+                    background-position-x: var(--button-xhuge-active-icon-offset-x,0);
+                }
+            }
+        }
+    }
+
+    &.active, &:active {
+        &:not(:disabled):not(.disabled) {
+            .toolbar__icon.toolbar__icon-big {
+                background-position-x: var(--button-xhuge-active-icon-offset-x,0);
+            }
+        }
+    }
+}
+.x-huge .toolbar__icon, .toolbar__icon.toolbar__icon-big {
+    background-image: var(--sprite-button-big-100, url(resources/../../img/v2/iconsbig.png));
+    background-size: var(--sprite-button-big-width, 56px) auto;
+
+}
+.x-huge .btn-audio:not(.menu__icon),
+    .toolbar__icon-big.btn-audio
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1260px;
+}
+.x-huge .btn-background-plugins:not(.menu__icon),
+    .toolbar__icon-big.btn-background-plugins
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1288px;
+}
+.x-huge .btn-big-add-comment:not(.menu__icon),
+    .toolbar__icon-big.btn-big-add-comment
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1316px;
+}
+.x-huge .btn-big-colorschemas:not(.menu__icon),
+    .toolbar__icon-big.btn-big-colorschemas
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1344px;
+}
+.x-huge .btn-big-hand-tool:not(.menu__icon),
+    .toolbar__icon-big.btn-big-hand-tool
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1372px;
+}
+.x-huge .btn-big-inserthyperlink:not(.menu__icon),
+    .toolbar__icon-big.btn-big-inserthyperlink
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1400px;
+}
+.x-huge .btn-big-menu-comments:not(.menu__icon),
+    .toolbar__icon-big.btn-big-menu-comments
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1428px;
+}
+.x-huge .btn-big-menu-navigation:not(.menu__icon),
+    .toolbar__icon-big.btn-big-menu-navigation
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1456px;
+}
+.x-huge .btn-big-more:not(.menu__icon),
+    .toolbar__icon-big.btn-big-more
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1484px;
+}
+.x-huge .btn-big-sheet-view:not(.menu__icon),
+    .toolbar__icon-big.btn-big-sheet-view
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1512px;
+}
+.x-huge .btn-big-text-vertical:not(.menu__icon),
+    .toolbar__icon-big.btn-big-text-vertical
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1540px;
+}
+.x-huge .btn-big-text:not(.menu__icon),
+    .toolbar__icon-big.btn-big-text
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1568px;
+}
+.x-huge .btn-compare:not(.menu__icon),
+    .toolbar__icon-big.btn-compare
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1596px;
+}
+.x-huge .btn-datetime:not(.menu__icon),
+    .toolbar__icon-big.btn-datetime
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1624px;
+}
+.x-huge .btn-day:not(.menu__icon),
+    .toolbar__icon-big.btn-day
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1652px;
+}
+.x-huge .btn-editheader:not(.menu__icon),
+    .toolbar__icon-big.btn-editheader
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1680px;
+}
+.x-huge .btn-eraser:not(.menu__icon),
+    .toolbar__icon-big.btn-eraser
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1708px;
+}
+.x-huge .btn-highlighter-tool:not(.menu__icon),
+    .toolbar__icon-big.btn-highlighter-tool
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1736px;
+}
+.x-huge .btn-ic-chat:not(.menu__icon),
+    .toolbar__icon-big.btn-ic-chat
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1764px;
+}
+.x-huge .btn-ic-coedit:not(.menu__icon),
+    .toolbar__icon-big.btn-ic-coedit
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1792px;
+}
+.x-huge .btn-ic-history:not(.menu__icon),
+    .toolbar__icon-big.btn-ic-history
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1820px;
+}
+.x-huge .btn-ic-protect:not(.menu__icon),
+    .toolbar__icon-big.btn-ic-protect
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1848px;
+}
+.x-huge .btn-ic-sharing:not(.menu__icon),
+    .toolbar__icon-big.btn-ic-sharing
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1876px;
+}
+.x-huge .btn-ic-signature:not(.menu__icon),
+    .toolbar__icon-big.btn-ic-signature
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1904px;
+}
+.x-huge .btn-img-align:not(.menu__icon),
+    .toolbar__icon-big.btn-img-align
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1932px;
+}
+.x-huge .btn-img-bkwd:not(.menu__icon),
+    .toolbar__icon-big.btn-img-bkwd
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1960px;
+}
+.x-huge .btn-img-frwd:not(.menu__icon),
+    .toolbar__icon-big.btn-img-frwd
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1988px;
+}
+.x-huge .btn-img-group:not(.menu__icon),
+    .toolbar__icon-big.btn-img-group
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -2016px;
+}
+.x-huge .btn-insertchart:not(.menu__icon),
+    .toolbar__icon-big.btn-insertchart
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -2044px;
+}
+.x-huge .btn-insertequation:not(.menu__icon),
+    .toolbar__icon-big.btn-insertequation
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -2072px;
+}
+.x-huge .btn-insertimage:not(.menu__icon),
+    .toolbar__icon-big.btn-insertimage
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -2100px;
+}
+.x-huge .btn-insertshape:not(.menu__icon),
+    .toolbar__icon-big.btn-insertshape
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -2128px;
+}
+.x-huge .btn-inserttable:not(.menu__icon),
+    .toolbar__icon-big.btn-inserttable
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -2156px;
+}
+.x-huge .btn-macros:not(.menu__icon),
+    .toolbar__icon-big.btn-macros
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -2184px;
+}
+.x-huge .btn-merge-shapes:not(.menu__icon),
+    .toolbar__icon-big.btn-merge-shapes
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -2212px;
+}
+.x-huge .btn-night:not(.menu__icon),
+    .toolbar__icon-big.btn-night
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -2240px;
+}
+.x-huge .btn-pagebreak:not(.menu__icon),
+    .toolbar__icon-big.btn-pagebreak
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -2268px;
+}
+.x-huge .btn-pagemargins:not(.menu__icon),
+    .toolbar__icon-big.btn-pagemargins
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -2296px;
+}
+.x-huge .btn-pageorient:not(.menu__icon),
+    .toolbar__icon-big.btn-pageorient
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -2324px;
+}
+.x-huge .btn-pagesize:not(.menu__icon),
+    .toolbar__icon-big.btn-pagesize
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -2352px;
+}
+.x-huge .btn-pen-tool:not(.menu__icon),
+    .toolbar__icon-big.btn-pen-tool
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -2380px;
+}
+.x-huge .btn-plugin-default:not(.menu__icon),
+    .toolbar__icon-big.btn-plugin-default
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -2408px;
+}
+.x-huge .btn-properties:not(.menu__icon),
+    .toolbar__icon-big.btn-properties
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -2436px;
+}
+.x-huge .btn-rem-comment:not(.menu__icon),
+    .toolbar__icon-big.btn-rem-comment
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -2464px;
+}
+.x-huge .btn-resolve-all:not(.menu__icon),
+    .toolbar__icon-big.btn-resolve-all
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -2492px;
+}
+.x-huge .btn-select:not(.menu__icon),
+    .toolbar__icon-big.btn-select
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -2520px;
+}
+.x-huge .btn-smart-art:not(.menu__icon),
+    .toolbar__icon-big.btn-smart-art
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -2548px;
+}
+.x-huge .btn-symbol:not(.menu__icon),
+    .toolbar__icon-big.btn-symbol
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -2576px;
+}
+.x-huge .btn-textart:not(.menu__icon),
+    .toolbar__icon-big.btn-textart
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -2604px;
+}
+.x-huge .btn-update:not(.menu__icon),
+    .toolbar__icon-big.btn-update
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -2632px;
+}
+.x-huge .btn-video:not(.menu__icon),
+    .toolbar__icon-big.btn-video
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -2660px;
+}
+.x-huge .btn-allow-edit-ranges:not(.menu__icon),
+    .toolbar__icon-big.btn-allow-edit-ranges
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) 0px;
+}
+.x-huge .btn-autosum:not(.menu__icon),
+    .toolbar__icon-big.btn-autosum
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -28px;
+}
+.x-huge .btn-big-named-range:not(.menu__icon),
+    .toolbar__icon-big.btn-big-named-range
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -56px;
+}
+.x-huge .btn-big-pivot-sum:not(.menu__icon),
+    .toolbar__icon-big.btn-big-pivot-sum
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -84px;
+}
+.x-huge .btn-big-remove-duplicates:not(.menu__icon),
+    .toolbar__icon-big.btn-big-remove-duplicates
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -112px;
+}
+.x-huge .btn-big-slicer:not(.menu__icon),
+    .toolbar__icon-big.btn-big-slicer
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -140px;
+}
+.x-huge .btn-blank-rows:not(.menu__icon),
+    .toolbar__icon-big.btn-blank-rows
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -168px;
+}
+.x-huge .btn-calculated:not(.menu__icon),
+    .toolbar__icon-big.btn-calculated
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -196px;
+}
+.x-huge .btn-calculation:not(.menu__icon),
+    .toolbar__icon-big.btn-calculation
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -224px;
+}
+.x-huge .btn-cell-group:not(.menu__icon),
+    .toolbar__icon-big.btn-cell-group
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -252px;
+}
+.x-huge .btn-cell-ungroup:not(.menu__icon),
+    .toolbar__icon-big.btn-cell-ungroup
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -280px;
+}
+.x-huge .btn-custom-sort:not(.menu__icon),
+    .toolbar__icon-big.btn-custom-sort
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -308px;
+}
+.x-huge .btn-data-validation:not(.menu__icon),
+    .toolbar__icon-big.btn-data-validation
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -336px;
+}
+.x-huge .btn-edit-links:not(.menu__icon),
+    .toolbar__icon-big.btn-edit-links
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -364px;
+}
+.x-huge .btn-finance:not(.menu__icon),
+    .toolbar__icon-big.btn-finance
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -392px;
+}
+.x-huge .btn-freeze-panes:not(.menu__icon),
+    .toolbar__icon-big.btn-freeze-panes
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -420px;
+}
+.x-huge .btn-func-math:not(.menu__icon),
+    .toolbar__icon-big.btn-func-math
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -448px;
+}
+.x-huge .btn-func-text:not(.menu__icon),
+    .toolbar__icon-big.btn-func-text
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -476px;
+}
+.x-huge .btn-goal-seek:not(.menu__icon),
+    .toolbar__icon-big.btn-goal-seek
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -504px;
+}
+.x-huge .btn-grand-totals:not(.menu__icon),
+    .toolbar__icon-big.btn-grand-totals
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -532px;
+}
+.x-huge .btn-import-data:not(.menu__icon),
+    .toolbar__icon-big.btn-import-data
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -560px;
+}
+.x-huge .btn-ins-formula:not(.menu__icon),
+    .toolbar__icon-big.btn-ins-formula
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -588px;
+}
+.x-huge .btn-insert-blank-line-after-each-item:not(.menu__icon),
+    .toolbar__icon-big.btn-insert-blank-line-after-each-item
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -616px;
+}
+.x-huge .btn-logic:not(.menu__icon),
+    .toolbar__icon-big.btn-logic
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -644px;
+}
+.x-huge .btn-lookup:not(.menu__icon),
+    .toolbar__icon-big.btn-lookup
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -672px;
+}
+.x-huge .btn-normal-view:not(.menu__icon),
+    .toolbar__icon-big.btn-normal-view
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -700px;
+}
+.x-huge .btn-page-break-preview:not(.menu__icon),
+    .toolbar__icon-big.btn-page-break-preview
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -728px;
+}
+.x-huge .btn-pivot-layout:not(.menu__icon),
+    .toolbar__icon-big.btn-pivot-layout
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -756px;
+}
+.x-huge .btn-print-area:not(.menu__icon),
+    .toolbar__icon-big.btn-print-area
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -784px;
+}
+.x-huge .btn-print-titles:not(.menu__icon),
+    .toolbar__icon-big.btn-print-titles
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -812px;
+}
+.x-huge .btn-protect-range:not(.menu__icon),
+    .toolbar__icon-big.btn-protect-range
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -840px;
+}
+.x-huge .btn-protect-sheet:not(.menu__icon),
+    .toolbar__icon-big.btn-protect-sheet
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -868px;
+}
+.x-huge .btn-protect-workbook:not(.menu__icon),
+    .toolbar__icon-big.btn-protect-workbook
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -896px;
+}
+.x-huge .btn-recent:not(.menu__icon),
+    .toolbar__icon-big.btn-recent
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -924px;
+}
+.x-huge .btn-recommended-chart:not(.menu__icon),
+    .toolbar__icon-big.btn-recommended-chart
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -952px;
+}
+.x-huge .btn-remove-blank-line-after-each-item:not(.menu__icon),
+    .toolbar__icon-big.btn-remove-blank-line-after-each-item
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -980px;
+}
+.x-huge .btn-repeat-all-item-labels:not(.menu__icon),
+    .toolbar__icon-big.btn-repeat-all-item-labels
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1008px;
+}
+.x-huge .btn-scale:not(.menu__icon),
+    .toolbar__icon-big.btn-scale
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1036px;
+}
+.x-huge .btn-select-pivot:not(.menu__icon),
+    .toolbar__icon-big.btn-select-pivot
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1064px;
+}
+.x-huge .btn-sheet-rtl:not(.menu__icon),
+    .toolbar__icon-big.btn-sheet-rtl
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1092px;
+}
+.x-huge .btn-sparkline:not(.menu__icon),
+    .toolbar__icon-big.btn-sparkline
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1120px;
+}
+.x-huge .btn-subtotals:not(.menu__icon),
+    .toolbar__icon-big.btn-subtotals
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1148px;
+}
+.x-huge .btn-table-alt-text:not(.menu__icon),
+    .toolbar__icon-big.btn-table-alt-text
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1176px;
+}
+.x-huge .btn-to-columns:not(.menu__icon),
+    .toolbar__icon-big.btn-to-columns
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1204px;
+}
+.x-huge .btn-watch-window:not(.menu__icon),
+    .toolbar__icon-big.btn-watch-window
+{
+    background-position: var(--button-xhuge-normal-icon-offset-x,0) -1232px;
+}

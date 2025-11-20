@@ -1,0 +1,26 @@
+.btn {
+    .options__icon.options__icon-huge {
+        background-position-x: 0;
+        background-position-x: var(--button-huge-normal-icon-offset-x,0);
+    }
+
+    &.active, &:active {
+        &:not(:disabled):not(.disabled) {
+            .options__icon.options__icon-huge {
+                background-position-x: 0;
+                background-position-x: var(--button-huge-active-icon-offset-x,0);
+            }
+        }
+    }
+}
+
+.options__icon.options__icon-huge {
+    background-image: url(resources/../../img/iconshuge.png);
+    background-size: 80px auto;
+    background-image: var(--sprite-button-huge-100, url(resources/../../img/iconshuge.png));
+    background-size: var(--huge-icon-background-image-width) auto;
+
+    .winxp & {
+        background-image: url(resources/../../img/iconshuge.png);
+    }
+}
