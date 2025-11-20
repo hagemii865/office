@@ -6,3 +6,4 @@ server/DocService/docservice
 server/FileConverter/converter
 build/*
 build_tools/*
+document-server-integration/
