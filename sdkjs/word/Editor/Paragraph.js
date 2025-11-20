@@ -2293,7 +2293,7 @@ Paragraph.prototype.Internal_Draw_2 = function(CurPage, pGraphics, Pr)
 		var SpecSym  = String.fromCharCode(0x25AA);
 		pGraphics.SetFont(SpecFont);
 		pGraphics.b_color1(0, 0, 0, 255);
-
+ //
 		var CurLine  = this.Pages[CurPage].FirstLine;
 		var CurRange = 0;
 		var X        = this.Lines[CurLine].Ranges[CurRange].XVisible;

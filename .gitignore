@@ -1,0 +1,8 @@
+server/Metrics/metrics
+server/AdminPanel/server/adminpanel
+server/DocService/docservice
+server/FileConverter/converter
+server/DocService/docservice
+server/FileConverter/converter
+build/*
+build_tools/*
