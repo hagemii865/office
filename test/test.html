@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ONLYOFFICE 文档测试</title>
+    <meta charset="utf-8">
+    <script src="http://192.168.201.132:8000/web-apps/apps/api/documents/api.js"></script>
+    <style>
+        body { margin: 20px; font-family: Arial, sans-serif; }
+        #editor { width: 100%; height: 800px; border: 2px solid #ccc; border-radius: 5px; }
+        .info { background: #f0f8ff; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <h1>ONLYOFFICE Document Server 测试</h1>
+    <div class="info">
+        <p><strong>状态：</strong> Document Server运行在端口8000</p>
+        <p><strong>文档：</strong> test.docx</p>
+        <p><strong>文件服务器：</strong> 端口9000</p>
+    </div>
+    <div id="editor"></div>
+    
+    <script>
+        try {
+            var docEditor = new DocsAPI.DocEditor("editor", {
+                "documentType": "text",
+                "document": {
+                    "title": "测试文档.docx",
+                    "url": "http://" + window.location.hostname + ":9000/test.docx",
+                    "fileType": "docx",
+                    "key": "test-key-" + new Date().getTime()
+                },
+                "editorConfig": {
+                    "mode": "edit",
+                    "lang": "zh-CN",
+                    "user": {
+                        "id": "user-001",
+                        "name": "测试用户"
+                    }
+                },
+                "height": "800px",
+                "width": "100%"
+            });
+            
+            console.log("文档编辑器初始化成功");
+        } catch (error) {
+            console.error("初始化错误:", error);
+            document.getElementById('editor').innerHTML = 
+                '<div style="color: red; padding: 20px; text-align: center;">' +
+                '<h3>错误：无法加载文档编辑器</h3>' +
+                '<p>' + error.message + '</p>' +
+                '</div>';
+        }
+    </script>
+</body>
+</html>
