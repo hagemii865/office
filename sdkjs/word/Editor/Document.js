@@ -10667,11 +10667,70 @@ CDocument.prototype.GetAddedTextOnKeyDown = function(e)
 	{
 		var oSelectedInfo = this.GetSelectedElementsInfo();
 		var oMath         = oSelectedInfo.GetMath();
-
+		// console.log("空格键被按下\n");
+		
 		if (!oMath)
 		{
+			// 原有的 Ctrl+Shift+Space 快捷键处理
 			if (true === e.ShiftKey && true === e.CtrlKey)
 				return [0x00A0];
+			
+			// 智能空格功能：段首检测和缩进处理
+			var oCurrentParagraph = this.GetCurrentParagraph();
+			if (oCurrentParagraph)
+			{
+				// 判断是否在段首
+				var bIsAtStart = oCurrentParagraph.IsCursorAtBegin();
+				var bIsEmpty = oCurrentParagraph.IsEmpty();
+				
+				// 检查是否在段尾
+				// var nContentLength = oCurrentParagraph.GetContentLength();
+				// var nCurrentPos = oCurrentParagraph.GetCursorPos ? oCurrentParagraph.GetCursorPos() : -1;
+				// var bIsAtEnd = 	oCurrentParagraph.IsCursorAtEnd();
+				// console.log("调试信息 - 段首判断:", bIsAtStart, "段尾判断:", bIsAtEnd, "当前光标位置:", nCurrentPos, "内容长度:", nContentLength, "段落是否为空:", bIsEmpty);
+				
+				// 情况b：段首 + 有文字的段落 -> 首行缩进（不显示空格符）
+				if (bIsAtStart && !bIsEmpty)
+				{
+					// console.log("进入缩进逻辑 - 是否在段首:", bIsAtStart, "段落是否为空:", bIsEmpty);
+					// 获取当前段落的缩进设置
+					var oParaPr = oCurrentParagraph.Get_CompiledPr2(false).ParaPr;
+					var nCurrentFirstLine = oParaPr.Ind.FirstLine || 0;
+					
+					// 获取当前段落的文本属性以计算字符宽度
+					var oTextPr = oCurrentParagraph.Get_FirstTextPr();
+					var nFontSize = oTextPr.FontSize || 12; // 默认12pt
+					
+					// 计算一个字符的宽度（单位：mm）
+					// 字号单位是pt，1pt = 1/72英寸，1英寸 = 25.4mm
+					// 中文字符宽度约等于字号大小，所以：字符宽度(mm) = 字号(pt) × 25.4 / 72
+					var nCharWidth = nFontSize * 25.4 / 72;
+					
+					// 首行缩进增加一个字符的宽度
+					var nNewFirstLine = nCurrentFirstLine + nCharWidth;
+					
+					// 设置新的首行缩进
+					oCurrentParagraph.Set_Ind({FirstLine: nNewFirstLine}, false);
+					this.Recalculate();
+					
+					// 缩进，不返回空格字符
+					return ["INDENT_OPERATION"];
+				}
+				
+				// 情况a：段首 + 空段落 -> 显示空格符
+				if (bIsAtStart && bIsEmpty)
+				{
+					// console.log("段首空段落，显示空格符");
+					return [32]; // 返回普通空格
+				}
+				
+				// 情况c：段中 -> 显示空格符
+				if (!bIsAtStart)
+				{
+					// console.log("段中位置，显示空格符");
+					return [32]; // 返回普通空格
+				}
+			}
 		}
 	}
 	else if (e.KeyCode == 69 && true === e.CtrlKey) // Ctrl + E + ...

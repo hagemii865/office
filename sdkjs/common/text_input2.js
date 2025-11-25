@@ -254,6 +254,12 @@
 		let isSpaceAsText = (32 === e.keyCode);
 		if (isSpaceAsText)
 		{
+			if (arrCodes && arrCodes.length === 1 && arrCodes[0] === "INDENT_OPERATION") {
+				// console.log("GetAddedTextOnKeyDown 返回空数组，阻止字符插入 (text_input2)");
+				// 但阻止后续的字符插入
+				AscCommon.stopEvent(e);
+				return false;
+			}
 			// hotkeys
 			if (AscCommon.global_keyboardEvent.AltKey ||
 				AscCommon.global_keyboardEvent.CtrlKey ||
