@@ -3702,6 +3702,7 @@
   "DE.Views.Statusbar.txtSymbols": "符號",
   "DE.Views.Statusbar.txtWordCount": "字數統計",
   "DE.Views.Statusbar.txtWords": "字數",
+  "DE.Views.Statusbar.txtChineseChars": "中文字數",
   "DE.Views.StyleTitleDialog.textHeader": "創建新樣式",
   "DE.Views.StyleTitleDialog.textNextStyle": "下一個段落樣式",
   "DE.Views.StyleTitleDialog.textTitle": "標題",

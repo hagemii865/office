@@ -321,6 +321,7 @@ define([
                             { caption: this.txtPages, value: 0 },
                             { caption: this.txtParagraphs, value: 0 },
                             { caption: this.txtWords, value: 0 },
+                            { caption: this.txtChineseChars, value: 0 },
                             { caption: this.txtSymbols, value: 0 },
                             { caption: this.txtSpaces, value: 0 }
                         ]
@@ -495,10 +496,12 @@ define([
                         this.btnDocInfo.menu.items[1].options.value = obj.get_ParagraphCount();
                     if (obj.get_WordsCount()>-1)
                         this.btnDocInfo.menu.items[2].options.value = obj.get_WordsCount();
+                    if (obj.get_ChineseChars()>-1)
+                        this.btnDocInfo.menu.items[3].options.value = obj.get_ChineseChars();
                     if (obj.get_SymbolsCount()>-1)
-                        this.btnDocInfo.menu.items[3].options.value = obj.get_SymbolsCount();
+                        this.btnDocInfo.menu.items[4].options.value = obj.get_SymbolsCount();
                     if (obj.get_SymbolsWSCount()>-1)
-                        this.btnDocInfo.menu.items[4].options.value = obj.get_SymbolsWSCount();
+                        this.btnDocInfo.menu.items[5].options.value = obj.get_SymbolsWSCount();
                     if (!this.timerDocInfo) { // start timer for filling info
                         var me = this;
                         this.timerDocInfo = setInterval(function(){
@@ -545,6 +548,7 @@ define([
             txtPages: 'Pages',
             txtWords: 'Words',
             txtParagraphs: 'Paragraphs',
+            txtChineseChars: 'Chinese Characters',
             txtSymbols: 'Symbols',
             txtSpaces: 'Symbols with spaces'
         }, DE.Views.Statusbar || {}));

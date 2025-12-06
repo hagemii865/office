@@ -3087,7 +3087,32 @@ ParaRun.prototype.CollectDocumentStatistics = function(ParaStats)
 		}
 
 		if (true === bSymbol)
+		{
 			ParaStats.Stats.Add_Symbol(bSpace);
+			
+			// 检查是否为中文字符
+			if (para_Text === ItemType && false === Item.IsNBSP())
+			{
+				var charCode = Item.Value;
+				// CJK统一汉字范围：4E00-9FFF
+				if ((charCode >= 0x4E00 && charCode <= 0x9FFF) ||
+					// CJK扩展A区：3400-4DBF
+					(charCode >= 0x3400 && charCode <= 0x4DBF) ||
+					// CJK扩展B-F区：20000-2FA1F
+					(charCode >= 0x20000 && charCode <= 0x2FA1F) ||
+					// CJK兼容汉字：F900-FAFF
+					(charCode >= 0xF900 && charCode <= 0xFAFF) ||
+					// 中文标点符号和特殊符号
+					(charCode >= 0x3000 && charCode <= 0x303F) ||
+					// 全角符号：FF00-FFEF
+					(charCode >= 0xFF00 && charCode <= 0xFFEF) ||
+					// CJK笔画和部首：2E80-2FDF
+					(charCode >= 0x2E80 && charCode <= 0x2FDF))
+				{
+					ParaStats.Stats.Add_ChineseChar();
+				}
+			}
+		}
 
 		if (true === bNewWord)
 			ParaStats.Stats.Add_Word();

@@ -213,6 +213,7 @@ CStatistics.prototype.Reset = function()
 	this.Paragraphs      = 0;
 	this.SymbolsWOSpaces = 0;
 	this.SymbolsWhSpaces = 0;
+	this.ChineseChars    = 0; // 中文字符统计
 };
 CStatistics.prototype.Start = function()
 {
@@ -280,7 +281,8 @@ CStatistics.prototype.Send = function()
 		WordsCount     : this.Words,
 		ParagraphCount : this.Paragraphs,
 		SymbolsCount   : this.SymbolsWOSpaces,
-		SymbolsWSCount : this.SymbolsWhSpaces
+		SymbolsWSCount : this.SymbolsWhSpaces,
+		ChineseChars   : this.ChineseChars
 	};
 
 	this.Api.sync_DocInfoCallback(Stats);
@@ -310,6 +312,11 @@ CStatistics.prototype.Add_Symbol = function(bSpace)
 	this.SymbolsWhSpaces++;
 	if ( true != bSpace )
 		this.SymbolsWOSpaces++;
+};
+
+CStatistics.prototype.Add_ChineseChar = function()
+{
+	this.ChineseChars++;
 };
 
 function CDocumentRecalcInfo()

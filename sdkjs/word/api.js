@@ -3072,6 +3072,7 @@ background-repeat: no-repeat;\
 			this.ParagraphCount = obj.ParagraphCount;
 			this.SymbolsCount   = obj.SymbolsCount;
 			this.SymbolsWSCount = obj.SymbolsWSCount;
+			this.ChineseChars   = obj.ChineseChars;
 		}
 		else
 		{
@@ -3080,6 +3081,7 @@ background-repeat: no-repeat;\
 			this.ParagraphCount = -1;
 			this.SymbolsCount   = -1;
 			this.SymbolsWSCount = -1;
+			this.ChineseChars   = -1;
 		}
 	}
 
@@ -3122,6 +3124,14 @@ background-repeat: no-repeat;\
 	CDocInfoProp.prototype.put_SymbolsWSCount = function(v)
 	{
 		this.SymbolsWSCount = v;
+	};
+	CDocInfoProp.prototype.get_ChineseChars = function()
+	{
+		return this.ChineseChars;
+	};
+	CDocInfoProp.prototype.put_ChineseChars = function(v)
+	{
+		this.ChineseChars = v;
 	};
 
 	/*callbacks*/
@@ -15466,6 +15476,8 @@ background-repeat: no-repeat;\
 	CDocInfoProp.prototype['put_SymbolsCount']          = CDocInfoProp.prototype.put_SymbolsCount;
 	CDocInfoProp.prototype['get_SymbolsWSCount']        = CDocInfoProp.prototype.get_SymbolsWSCount;
 	CDocInfoProp.prototype['put_SymbolsWSCount']        = CDocInfoProp.prototype.put_SymbolsWSCount;
+	CDocInfoProp.prototype['get_ChineseChars']          = CDocInfoProp.prototype.get_ChineseChars;
+	CDocInfoProp.prototype['put_ChineseChars']          = CDocInfoProp.prototype.put_ChineseChars;
 	CContextMenuData.prototype['get_Type']    = CContextMenuData.prototype.get_Type;
 	CContextMenuData.prototype['get_X']       = CContextMenuData.prototype.get_X;
 	CContextMenuData.prototype['get_Y']       = CContextMenuData.prototype.get_Y;
